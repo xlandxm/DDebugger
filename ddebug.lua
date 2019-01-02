@@ -1,6 +1,6 @@
 DDebuger = DDebuger or {}
 
-local bpFile = "E:\\DDebugger\\breakpoint.txt"
+local bpFile = [[E:\\DDebugger\\breakpoint.txt]]
 
 ------------------------HandlerList beg----------------------
 -- quit/q
@@ -231,7 +231,7 @@ function DDebuger:InitDisplayModule()
 	local connList = {}
 	table.insert(connList, self.sever)
 
-	os.execute([[ start E:\DDebugger\ddebuggerC\DDebuggerC.exe ]])
+	os.execute([[ start E:\\DDebugger\\ddebuggerC\\DDebuggerC.exe ]])
 
 	while true do 
 		self.conn = self.sever:accept()  --连接
